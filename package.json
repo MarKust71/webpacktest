@@ -1,0 +1,30 @@
+{
+  "name": "empty-project",
+  "version": "1.0.0",
+  "description": "Empty project.",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "scripts": {
+    "start": "webpack-dev-server --inline --hot",
+    "clean": "rm dist/bundle.js",
+    "build-dev": "webpack -d --mode development",
+    "build-prod": "webpack -p --mode production"
+  },
+  "dependencies": {
+    "webpack-dev-server": "^3.9.0"
+  },
+  "devDependencies": {
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10",
+    "babel-loader": "^8.0.6",
+    "@babel/core": "^7.7.4",
+    "@babel/preset-env": "^7.7.4",
+    "css-loader": "^3.2.0",
+    "style-loader": "^1.0.0",
+    "eslint": "^6.7.0",
+    "file-loader": "^4.3.0",
+    "url-loader": "^2.3.0"
+  }
+}
